@@ -3,65 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae</title>
+    <title>My CV & Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>Curriculum Vitae</h1>
-    
-    <h2>Data Pribadi</h2>
-    <p>Nama: Gusti Krisna Pranata</p>
-    <p>Email: gustikrisna@example.com</p>
-    <p>Telepon: +62 812-3456-7890</p>
 
-    <h2>Profil</h2>
-    <p>Junior Flutter Developer yang antusias dalam pengembangan aplikasi mobile.</p>
+    <header>
+        <h1>Nama Anda</h1>
+        <p>UI/UX Designer & Web Developer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2>Keterampilan</h2>
-    <ul>
-        <li>Flutter & Dart</li>
-        <li>Firebase</li>
-        <li>REST API</li>
-    </ul>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Deskripsi singkat tentang pengalaman dan keahlian Anda.</p>
+    </section>
 
-    <h2>Portofolio</h2>
-    <p>Aplikasi To-Do List, E-Commerce App, Weather App</p>
+    <section id="services">
+        <h2>Services</h2>
+        <div class="service">
+            <h3>UI/UX Design</h3>
+            <p>Desain antarmuka yang menarik dan ramah pengguna.</p>
+        </div>
+        <div class="service">
+            <h3>Web Development</h3>
+            <p>Membangun website yang responsif dan cepat.</p>
+        </div>
+    </section>
 
-    <h2>Riwayat Pendidikan</h2>
-    <table border="1" cellpadding="8" cellspacing="0">
-        <tr>
-            <th>Tahun</th>
-            <th>Institusi</th>
-            <th>Gelar</th>
-        </tr>
-        <tr>
-            <td>2018 - 2022</td>
-            <td>Universitas Teknologi</td>
-            <td>Sarjana Teknik Informatika</td>
-        </tr>
-        <tr>
-            <td>2015 - 2018</td>
-            <td>SMA Negeri 1 Jakarta</td>
-            <td>Jurusan IPA</td>
-        </tr>
-    </table>
+    <section id="portfolio">
+        <h2>My Projects</h2>
+        <div class="filter-buttons">
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('web')">Web Design</button>
+            <button onclick="filterProjects('uiux')">UI/UX</button>
+        </div>
+        <div class="projects">
+            <div class="project" data-category="web">
+                <h3>Website E-Commerce</h3>
+            </div>
+            <div class="project" data-category="uiux">
+                <h3>Mobile App UI</h3>
+            </div>
+        </div>
+    </section>
 
-    <h2>Pengalaman Kerja</h2>
-    <table border="1" cellpadding="8" cellspacing="0">
-        <tr>
-            <th>Tahun</th>
-            <th>Perusahaan</th>
-            <th>Posisi</th>
-        </tr>
-        <tr>
-            <td>2023 - Sekarang</td>
-            <td>Startup Teknologi XYZ</td>
-            <td>Flutter Developer</td>
-        </tr>
-        <tr>
-            <td>2022 - 2023</td>
-            <td>Software House ABC</td>
-            <td>Intern Mobile Developer</td>
-        </tr>
-    </table>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Nama Anda. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
